@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ihsan Bilhaq | Web Developer</title>
+
+    <meta name="description" content="Portofolio Ihsan Bilhaq, seorang Creative Web Developer & Problem Solver yang berspesialisasi dalam pengembangan web front-end dan teknologi interaktif.">
+    <meta name="keywords" content="Ihsan Bilhaq, portofolio, web developer, front-end, javascript, three.js">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <canvas id="interactive-background"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Portofolio</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">Perjalanan</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Karya</a></li>
+                <li class="nav-item"><a href="#lab" class="nav-link">Keahlian</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-hero">Ihsan Bilhaq</h1>
+            <p class="hero-tagline animate-hero">Creative Web Developer & Problem Solver</p>
+            <a href="#projects" class="hero-cta animate-hero">Lihat Karya Saya</a>
+        </div>
+        <div id="hero-canvas-container"></div> 
+    </header>
+
+    <main>
+        <section class="about-me">
+            <div class="about-me-container">
+                <h2 class="section-title">Tentang Saya</h2>
+                <p class="about-me-text">
+                    Mahasiswa Teknik Informatika dengan antusiasme tinggi dalam menciptakan pengalaman web yang imersif dan fungsional. Saya percaya bahwa setiap baris kode adalah kesempatan untuk memecahkan masalah dan membangun solusi digital yang tidak hanya terlihat indah, tetapi juga memberikan dampak nyata bagi pengguna.
+                </p>
+            </div>
+        </section>
+
+        <section id="about" class="journey">
+            <h2 class="section-title">Perjalanan Saya</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Okt 2024 - Feb 2025</span>
+                        <h3 class="timeline-title">Guru STEM (MSIB Kampus Merdeka)</h3>
+                        <p class="timeline-company">PT. Maleo Edukasi Teknologi</p>
+                        <p class="timeline-desc">Meraih penghargaan "Mahasiswa Magang Terbaik" dan mendapatkan Golden Ticket.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Feb 2024 - Jun 2024</span>
+                        <h3 class="timeline-title">Web Developer (Studi Independen)</h3>
+                        <p class="timeline-company">PT. Akselerasi Edukasi Internasional</p>
+                        <p class="timeline-desc">Fokus pada layanan keuangan/perbankan, meraih penghargaan "Mahasiswa Magang Terbaik" dan Golden Ticket.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Feb 2021 - Apr 2021</span>
+                        <h3 class="timeline-title">Staf Stok Opname</h3>
+                        <p class="timeline-company">PT. Media Dokter Investama (Halodoc)</p>
+                        <p class="timeline-desc">Bertanggung jawab dalam persiapan dan pengecekan stok barang medis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="awards">
+            <h2 class="section-title">Penghargaan & Pengakuan</h2>
+            <div class="awards-container">
+                <div class="award-item">
+                    <i class='bx bxs-trophy award-icon'></i>
+                    <h3 class="award-title">Mahasiswa Magang Terbaik</h3>
+                    <p class="award-source">PT. Akselerasi Edukasi Internasional</p>
+                </div>
+                <div class="award-item">
+                    <i class='bx bxs-trophy award-icon'></i>
+                    <h3 class="award-title">Mahasiswa Magang Terbaik</h3>
+                    <p class="award-source">PT. Maleo Edukasi Teknologi</p>
+                </div>
+                <div class="award-item">
+                    <i class='bx bxs-coupon award-icon'></i>
+                    <h3 class="award-title">Penerima Golden Ticket</h3>
+                    <p class="award-source">Studi Independen & MSIB</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="gallery">
+            <h2 class="section-title">Karya Pilihan</h2>
+            <div class="gallery-grid">
+                <div class="project-card" 
+                     data-title="EduCora Virtual Asistant"
+                     data-desc="EduCora adalah asisten virtual berbasis web yang dirancang untuk memberikan pengalaman belajar yang interaktif dan personal. Dibangun dengan fokus pada antarmuka yang bersih dan responsif."
+                     data-tech="HTML, CSS, JavaScript"
+                     data-link="https://ihsanbil.github.io/EduCora/"
+                     tabindex="0">
+                    <div class="project-image-container">
+                        <img src="https://ihsanbil.github.io/EduCora/EduCora.png" alt="Tampilan antarmuka aplikasi asisten virtual EduCora." loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>EduCora</h3>
+                        <p>Web Virtual Asistant</p>
+                    </div>
+                </div>
+
+                <div class="project-card"
+                     data-title="Proyek BiMing"
+                     data-desc="BiMing adalah sebuah aplikasi web yang dirancang untuk hiburan, berisi kumpulan permainan interaktif. Proyek ini mengintegrasikan Firebase API untuk fungsionalitas backend."
+                     data-tech="HTML, CSS, JavaScript, Firebase API"
+                     data-link="https://funny-genie-edf6e7.netlify.app/"
+                     tabindex="0">
+                    <div class="project-image-container">
+                        <img src="assets/images/BiMing.png" alt="Antarmuka web gaming dengan nuansa retro." loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Proyek BiMing</h3>
+                        <p>Bilhaq Gaming Web</p>
+                    </div>
+                </div>
+
+                <div class="project-card"
+                     data-title="Proyek CoraAI"
+                     data-desc="CoraAI adalah sebuah aplikasi chatbot cerdas yang terinspirasi dari model bahasa besar seperti Gemini. Proyek ini memanfaatkan API Gemini untuk memberikan respons yang relevan dan kontekstual."
+                     data-tech="HTML, CSS, JavaScript, API Gemini"
+                     data-link="https://ihsanbil.github.io/CoraAI/"
+                     tabindex="0">
+                     <div class="project-image-container">
+                        <img src="https://ihsanbil.github.io/CoraAI/Cora.png" alt="Antarmuka aplikasi chatbot CoraAI." loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Proyek CoraAI</h3>
+                        <p>Aplikasi Chatbot</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lab" class="playground">
+            <h2 class="section-title">Keahlian</h2>
+            <p class="section-subtitle">Sebuah etalase kreatif dari kemampuan teknis saya. Gerakkan mouse Anda.</p>
+            <div id="skills-canvas-container"></div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Mari Ciptakan Sesuatu yang Hebat</h2>
+            <p class="section-subtitle">Punya proyek atau hanya ingin menyapa? Saya ingin terhubung dengan Anda.</p>
+            <div class="contact-links">
+                <a href="mailto:scr.soccer2019@gmail.com" class="contact-button" aria-label="Kirim Email">
+                    <i class='bx bxl-gmail'></i>
+                    <span class="visually-hidden">Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/ihsanbilhaq" target="_blank" class="contact-button" aria-label="Kunjungi Profil LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                    <span class="visually-hidden">LinkedIn</span>
+                </a>
+                <a href="https://github.com/ihsanbil" target="_blank" class="contact-button" aria-label="Kunjungi Profil GitHub">
+                    <i class='bx bxl-github'></i>
+                    <span class="visually-hidden">GitHub</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" tabindex="0">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+            <div id="modal-tech"></div>
+            <a href="#" id="modal-link" class="modal-button" target="_blank" rel="noopener noreferrer">
+                Lihat Proyek <i class='bx bx-link-external'></i>
+            </a>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Ihsan Bilhaq. Dibuat dengan sepenuh hati.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
